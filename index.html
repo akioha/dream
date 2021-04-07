@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+
+
+</head>
+
+<body>
+
+<!-- lottie -->
+<div style="width:auto; height:auto;" id="lottie"></div>
+<script src="js/lottie.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	lottie.loadAnimation({
+		container: document.getElementById('lottie'), // アニメーションをさせたいdivなどhtml要素ににつけた名前
+		renderer: 'svg',
+	 	loop: true,
+	 	autoplay: true,
+	 	path: 'data.json' // 自分が書き出したjsonファイルの名前と場所（パス）を記述
+	});
+</script>
+<!-- lottie -->
+
+<section class="hero">
+  <div class="video-box">
+    <video class="video" muted autoplay loop>
+      <source src="AdobeStock_189533897_Video_HD_Preview_1.mp4" type="video/mp4">
+    </video>
+	  <div>
+	    <img class="img1" src="イラスト_ワーケーション.png">
+	    <img class="img2" src="イラスト_釣り人.png">
+	  </div>
+  </div>
+  <div class="text-box">
+    <h1>住もう、宮古島。</h1>
+  </div>
+</section>
+
+<section class="hero overlay">
+    <div class="box1">要素</div>
+    <div class="box2">要素</div>
+</section>
+
+
+</body>
+</html>
+
+
