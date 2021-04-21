@@ -60,12 +60,12 @@
     bottom: 0;
     left: 0;
     border: 1px solid pink;
-	z-index: 9999;
+	z-index: 9998;
 
 }
 #lottie3{
     width: 100%;
-    max-width: 1184px;
+    max-width: 1204px;
     height: auto;
     position: fixed;
     bottom: 0;
