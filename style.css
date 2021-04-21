@@ -73,6 +73,14 @@
     border: 1px solid pink;
 /* 	z-index: 9998; */
 }
+#lottie1{
+	width:100%;
+	max-width:1224px;
+	height: auto;
+	position: fixed;
+	top:0;
+	border:1px solid red;
+}
 #lottie3{
     width: 100%;
     max-width: 1204px;
