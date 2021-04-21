@@ -44,9 +44,12 @@
 	height:100vh;
 	border:2px solid black;
 	background: #fff;
+	transition: all 1s;
+      	opacity: 1;
 }
 .animed{
-	display: none;
+/* 	display: none; */
+	opacity: 0!impoetant;
 }
 
 #lottie{
