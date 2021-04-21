@@ -62,6 +62,12 @@
 		});
 // 	} );
 
+	// アニメーションが終わったら
+	anim3.addEventListener('complete', e=> {
+		const anime = document.getElementById('anime');
+  		anime.classList.add('ainmed');
+	} );
+
 // setTimeout(function(){
 //     let animWrap = document.getElementById('lottie');
 //     let anim = animWrap.getElementsByTagName('svg');
