@@ -60,7 +60,6 @@
 	bottom:0;
 	left:0;
 	border:1px solid red;
-	background: #fff;
 }
 #lottie2{
     width: 100%;
@@ -71,8 +70,6 @@
     left: 0;
     border: 1px solid pink;
 	z-index: 9998;
-	background: #fff;
-
 }
 #lottie3{
     width: 100%;
@@ -83,8 +80,6 @@
     right: 0;
     border: 1px solid pink;
 		z-index: 9999;
-	background: #fff;
-
 }
 
 
