@@ -35,7 +35,18 @@
 	 	autoplay: true,
 	 	path: 'left.json' // 自分が書き出したjsonファイルの名前と場所（パス）を記述
 	});
+setTimeout(function(){
+    let animWrap = document.getElementById('lottie');
+    let anim = animWrap.getElementsByTagName('svg');
+    anim[0].setAttribute("preserveAspectRatio", "none");
+    anim[0].style.width = "100vw";
+    anim[0].style.height = "100vh";
+}, 500);
+	
+	
+	
 </script>
+	
 <!-- lottie -->
 
 <section class="hero">
