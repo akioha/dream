@@ -37,15 +37,15 @@
 </div>
 <script src="lottie.min.js" type="text/javascript" charset="utf-8"></script>
 <script>
-	const anim = lottie.loadAnimation({
-		container: document.getElementById('lottie'), // アニメーションをさせたいdivなどhtml要素ににつけた名前
-		renderer: 'svg',
-	 	loop: false,
-	 	autoplay: true,
-	 	path: 'left.json' // 自分が書き出したjsonファイルの名前と場所（パス）を記述
-	});
+// 	const anim = lottie.loadAnimation({
+// 		container: document.getElementById('lottie'), // アニメーションをさせたいdivなどhtml要素ににつけた名前
+// 		renderer: 'svg',
+// 	 	loop: false,
+// 	 	autoplay: true,
+// 	 	path: 'left.json' // 自分が書き出したjsonファイルの名前と場所（パス）を記述
+// 	});
 	
-	anim.addEventListener('complete', e=> {
+// 	anim.addEventListener('complete', e=> {
 		var tgt_container = document.getElementById('lottie2');
 		const anim2 = lottie.loadAnimation({
 			container: tgt_container,
@@ -58,9 +58,9 @@
 			container: tgt_container,
 			renderer: 'svg',
 			loop: true,
-			path: 'left.json'
+			path: 'left2.json'
 		});
-	} );
+// 	} );
 
 // setTimeout(function(){
 //     let animWrap = document.getElementById('lottie');
