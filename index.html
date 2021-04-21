@@ -31,17 +31,29 @@
 <!-- lottie -->
 <div class="anime">
 <!-- <div style="width:100%; min-height:100%;" id="lottie"></div> -->
-<div id="lottie"></div>
+	<div id="lottie"></div>
+	<div id="lottie"></div>
 </div>
 <script src="lottie.min.js" type="text/javascript" charset="utf-8"></script>
 <script>
-	lottie.loadAnimation({
+	const anim = lottie.loadAnimation({
 		container: document.getElementById('lottie'), // アニメーションをさせたいdivなどhtml要素ににつけた名前
 		renderer: 'svg',
 	 	loop: true,
 	 	autoplay: true,
 	 	path: 'left.json' // 自分が書き出したjsonファイルの名前と場所（パス）を記述
 	});
+	
+	anim.addEventListener('complete', e=> {
+		var tgt_container = document.getElementById('lottie');
+		const anim2 = lottie.loadAnimation({
+			container: tgt_container,
+			renderer: 'svg',
+			loop: true,
+			path: 'left.json'
+		});
+	} );
+
 // setTimeout(function(){
 //     let animWrap = document.getElementById('lottie');
 //     let anim = animWrap.getElementsByTagName('svg');
