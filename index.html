@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>Document</title>
-
-
-</head>
-
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
 <body>
 
 <!-- ローディング画面 -->
@@ -23,17 +19,14 @@
 }</script>
 	 -->
 	
-
-<!-- lottie -->
+<!-- op_animation lottie -->
 <div id="anime">
-<!-- <div style="width:100%; min-height:100%;" id="lottie"></div> -->
-<!-- 	<div id="lottie"></div> -->
-	<div id="lottie2"></div>
-	<div id="lottie3"></div>
-	<div id="lottie1"></div>
-
+	<div id="anime_left"></div>
+	<div id="anime_top"></div>
+	<div id="anime_right"></div>
 </div>
-<script src="lottie.min.js" type="text/javascript" charset="utf-8"></script>
+<script  type="text/javascript" src="lottie.min.js"></script>
+<script  type="text/javascript" src="anime_lottie.js"></script>
 <script>
 // 	const anim = lottie.loadAnimation({
 // 		container: document.getElementById('lottie'), // アニメーションをさせたいdivなどhtml要素ににつけた名前
@@ -44,48 +37,36 @@
 // 	});
 	
 // 	anim.addEventListener('complete', e=> {
-		var tgt_container = document.getElementById('lottie2');
-		const anim2 = lottie.loadAnimation({
-			container: tgt_container,
-			renderer: 'svg',
-			loop: false,
-			path: 'left2.json'
-		});
-	var tgt_container = document.getElementById('lottie1');
-		const anim1 = lottie.loadAnimation({
-			container: tgt_container,
-			renderer: 'svg',
-			loop: false,
-			path: 'top.json'
-		});
-		var tgt_container = document.getElementById('lottie3');
-		const anim3 = lottie.loadAnimation({
-			container: tgt_container,
-			renderer: 'svg',
-			loop: false,
-			path: 'right2.json'
-		});
+// 		var tgt_container = document.getElementById('anime_left');
+// 		const anim2 = lottie.loadAnimation({
+// 			container: tgt_container,
+// 			renderer: 'svg',
+// 			loop: false,
+// 			path: 'left2.json'
+// 		});
+// 	var tgt_container = document.getElementById('anime_top');
+// 		const anim1 = lottie.loadAnimation({
+// 			container: tgt_container,
+// 			renderer: 'svg',
+// 			loop: false,
+// 			path: 'top.json'
+// 		});
+// 		var tgt_container = document.getElementById('anime_right');
+// 		const anim3 = lottie.loadAnimation({
+// 			container: tgt_container,
+// 			renderer: 'svg',
+// 			loop: false,
+// 			path: 'right2.json'
+// 		});
 // 	} );
 
-	// アニメーションが終わったら
-	anim3.addEventListener('complete', e=> {
-		const anime = document.getElementById('anime');
-  		anime.classList.add('animed');
-	} );
-
-// setTimeout(function(){
-//     let animWrap = document.getElementById('lottie');
-//     let anim = animWrap.getElementsByTagName('svg');
-//     anim[0].setAttribute("preserveAspectRatio", "none");
-//     anim[0].style.width = "100vw";
-//     anim[0].style.height = "100vh";
-// }, 500);
-	
-	
-	
+	// アニメーションが終わったらフェードアウト
+// 	anim3.addEventListener('complete', e=> {
+// 		const anime = document.getElementById('anime');
+//   		anime.classList.add('animed');
+// 	} );	
 </script>
-	
-<!-- lottie -->
+<!-- op_animation lottie -->
 
 <!-- <header>
   <h1 class="headline">
@@ -99,10 +80,6 @@
     <li class="nav-list-item">Topic</li>
   </ul>
 </header> -->
-	
-	
-	
-	
 	
 <section class="hero">
   <div class="video-box">
