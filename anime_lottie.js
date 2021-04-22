@@ -24,7 +24,7 @@ var tgt_container = document.getElementById('anime_right');
 });
 
 // アニメーションが終わったらフェードアウト
-anim3.addEventListener('complete', e=> {
+anime_right.addEventListener('complete', e=> {
 		const anime = document.getElementById('anime');
   		anime.classList.add('animed');
 } );	
