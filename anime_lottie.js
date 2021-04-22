@@ -1,6 +1,6 @@
 // 左側
 var tgt_container = document.getElementById('anime_left');
-		const anim2 = lottie.loadAnimation({
+		const anime_left = lottie.loadAnimation({
 			container: tgt_container,
 			renderer: 'svg',
 			loop: false,
@@ -8,7 +8,7 @@ var tgt_container = document.getElementById('anime_left');
 		});
 // 上
 var tgt_container = document.getElementById('anime_top');
-		const anim1 = lottie.loadAnimation({
+		const anime_top = lottie.loadAnimation({
 			container: tgt_container,
 			renderer: 'svg',
 			loop: false,
@@ -16,7 +16,7 @@ var tgt_container = document.getElementById('anime_top');
 });
 // 右側
 var tgt_container = document.getElementById('anime_right');
-		const anim3 = lottie.loadAnimation({
+		const anime_right = lottie.loadAnimation({
 			container: tgt_container,
 			renderer: 'svg',
 			loop: false,
