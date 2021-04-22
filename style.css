@@ -92,12 +92,13 @@
 /* 		z-index: 9999; */
 }
 
-.header{
+header{
 	width:300px;
 	background:#fff;
 	position:fixed;
 	top:0;
 	left:0;
+	height: 100vh;
 }
 
 
