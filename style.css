@@ -173,8 +173,9 @@ h1 {
   text-shadow: -5px 5px 3px #707070;
   height: 100vh;
 /*   text-align: center; */
-	align-items: center;
+align-items: center;
   margin: 0 auto;
+text-indent: -1em;
 }
 
 /*下からフェードイン*/
